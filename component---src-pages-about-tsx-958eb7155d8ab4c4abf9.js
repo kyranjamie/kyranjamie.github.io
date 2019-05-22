@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{145:function(e,n,t){"use strict";t.r(n);var r=t(0),a=t.n(r),c=t(148);n.default=function(){return a.a.createElement(c.a,null,a.a.createElement("div",null,"Hey there, I'm Kyran, frontend developer based in Amsterdam"))}},148:function(e,n,t){"use strict";t.d(n,"a",function(){return o});var r=t(0),a=t.n(r),c=t(143);function o(e){var n=e.children;return console.log(c),a.a.createElement("div",{className:c.Layout},n)}}}]);
+//# sourceMappingURL=component---src-pages-about-tsx-958eb7155d8ab4c4abf9.js.map
