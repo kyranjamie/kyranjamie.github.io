@@ -17,13 +17,13 @@ const StyledAnchor = styled.a`
 
 export default () => (
   <footer>
-    <a href="https://github.com/kyranjamie">Github</a>
-    <a href="https://twitter.com/kyranjamie">Twitter</a>
-    <a href="https://www.linkedin.com/in/kyranburraston">LinkedIn</a>
-    <a href="https://angel.co/kyranjamie">AngelList</a>
-    <a href="https://stackoverflow.com/users/1141891/kyranjamie">StackOverflow</a>
-    <a href="https://keybase.io/kyranjamie">Keybase</a>
-    <a href="https://open.spotify.com/user/kyrannn">Spotify</a>
-    <a href="https://last.fm/user/kyrannn">Last.fm</a>
+    <a target="_blank" href="https://github.com/kyranjamie">Github</a>
+    <a target="_blank" href="https://twitter.com/kyranjamie">Twitter</a>
+    <a target="_blank" href="https://www.linkedin.com/in/kyranburraston">LinkedIn</a>
+    <a target="_blank" href="https://angel.co/kyranjamie">AngelList</a>
+    <a target="_blank" href="https://stackoverflow.com/users/1141891/kyranjamie">StackOverflow</a>
+    <a target="_blank" href="https://keybase.io/kyranjamie">Keybase</a>
+    <a target="_blank" href="https://open.spotify.com/user/kyrannn">Spotify</a>
+    <a target="_blank" href="https://last.fm/user/kyrannn">Last.fm</a>
   </footer>
 )
