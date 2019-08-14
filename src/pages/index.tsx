@@ -3,9 +3,10 @@ import { graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 
 import { Layout } from '../components/layout'
+import { AvailableForWork } from '../components/available-for-work'
+import { NameCard } from '../components/name-card'
 import PostLink from '../components/post-link'
-import Project from '../components/project'
-  
+
 interface IndexPageProps {
   data: {
     site: {
@@ -16,7 +17,7 @@ interface IndexPageProps {
     }
   }
 }
-  
+
 export const indexPageQuery = graphql`
   query IndexPageQuery {
     site {
@@ -42,26 +43,23 @@ export const indexPageQuery = graphql`
 `
 
 export default class IndexPage extends React.Component<any, {}> {
-  render() {
-    console.log(this.props);
-
-    const { name, tagline }: any = this.props.data.site.siteMetadata
+  render () {
+    const { name, tagline, lookingForWork }: any = this.props.data.site.siteMetadata
     const { edges }: any = this.props.data.allMarkdownRemark
 
     const Posts = edges
-      .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-      .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
-  
-          // <div>
-          //   {Posts}
-          // </div>
+      .filter((edge: any) => !!edge.node.frontmatter.date)
+      .map((edge: any) => <PostLink key={edge.node.id} post={edge.node} />)
+
     return (
       <Layout>
-        {/*<p>{tagline}</p>*/}
-        <main>
-          <div>
-          </div>
-        </main>
+        <NameCard />
+        <p>Thanks for stopping by.</p>
+        <p>
+          I’m a frontend developer based in Amsterdam.
+          Over the last few years I’ve worked with product companies such as Usabilla, GoldRepublic,
+          and Blockport, building web applications used by thousands of people.
+        </p>
       </Layout>
     )
   }

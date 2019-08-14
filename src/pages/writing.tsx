@@ -4,6 +4,6 @@ import { Layout } from '../components/layout'
 
 export default () => (
   <Layout>
-    <div>about page sdlkfslkjdfslkfdlk</div>
+    <div>writings</div>
   </Layout>
 )

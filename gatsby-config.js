@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     name: `Kyran Burraston`,
-    tagline: `Hi there, welcome to my personal website`
-  },  
+    tagline: `Frontend developer living in Amsterdam`
+  },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
@@ -14,18 +14,6 @@ module.exports = {
         name: "writing",
       }
     },
-    `gatsby-transformer-remark`,
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: 'Poppins',
-            subsets: [`latin`],
-            variants: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
-          }
-        ]
-      }
-    }
+    `gatsby-transformer-remark`
   ]
 }

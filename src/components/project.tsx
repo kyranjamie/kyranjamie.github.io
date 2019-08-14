@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const StyledH1 = styled.h1`
-  font-size: 15px;
+const ProjectName = styled.h1`
+  margin: 20px 0 0 0;
+  font-size: 16px;
 `
 
 const Name = styled.h1`
@@ -10,9 +11,29 @@ const Name = styled.h1`
   color: #193441;
 `
 
-export default props => 
-  <>
-    <StyledH1>{props.name}</StyledH1>
-    {/* image */}
-    <p>{props.text}</p>
-  </>
+const ProjectContent = styled.p`
+  font-size: 14px;
+`
+
+const ProjectLink = styled.a`
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 2px;
+  display: inline-block;
+`
+
+interface ProjectProps {
+  title: string
+  url: string
+  children: React.ReactNode
+}
+
+export const Project = (props: ProjectProps) => {
+  return (
+    <>
+      <ProjectName>{props.title}</ProjectName>
+      <ProjectLink href={props.url}>{props.url}</ProjectLink>
+      <ProjectContent>{props.children}</ProjectContent>
+    </>
+  )
+}

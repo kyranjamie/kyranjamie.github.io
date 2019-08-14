@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 interface SocialItemProps {
-  href: string;
-  children: any;
+  href: string
+  children: any
 }
 
 const StyledAnchor = styled.a`

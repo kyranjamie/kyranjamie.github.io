@@ -1,12 +1,22 @@
 import React from 'react'
+import styled from 'styled-components'
 import { Link } from 'gatsby'
 
-export default () => (
-  <nav>
-    <Link to="/">kyranjamie.com</Link>
-  </nav>
-)
+const StyledNav = styled.nav`
+  margin-bottom: 12px;
+`
 
-// <Link to="/about">About</Link>
-// <Link to="/writing">Writing</Link>
-// <Link to="/projects">Projects</Link>
+const StyledLink = styled(Link)`
+  margin-right: 8px;
+  position: relative;
+`
+
+export default () => (
+  <StyledNav>
+    <div>
+      {/*<StyledLink to="/">About</StyledLink>*/}
+      <StyledLink to="/projects">Projects</StyledLink>
+      {/*<StyledLink to="/writing">Writing</StyledLink>*/}
+    </div>
+  </StyledNav>
+)

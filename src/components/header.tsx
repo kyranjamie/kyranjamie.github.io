@@ -2,17 +2,16 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-const StyledH1 = styled.h1`
-  font-size: 15px;
+const StyledHeader = styled.header`
+  margin-bottom: 12px;
 `
 
-const Name = styled.h1`
-  font-size: 28px;
-  color: #193441;
+const StyledLink = styled(Link)`
+  display: inline-block;
 `
 
-export default () => 
-  <Link to="/">
-    <StyledH1>kyranjamie.com/</StyledH1>
-    <Name>Kyran Burraston</Name>
-  </Link>
+export default () => (
+  <StyledHeader>
+    <StyledLink to="/">kyranjamie.com</StyledLink>
+  </StyledHeader>
+)
