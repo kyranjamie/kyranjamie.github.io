@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 
 import { Project } from '../components/project'
@@ -11,6 +12,9 @@ const ProjectContainer = styled.div`
 
 export default () => (
   <Layout>
+    <Helmet>
+      <title>Projects — Kyran Jamie Burraston</title>
+    </Helmet>
     <ProjectContainer>
       <Project title="Blockport" url="https://blockport.io">
         Joined Blockport in March 2018 as Lead Frontend Developer. Within 6 months, we'd build the

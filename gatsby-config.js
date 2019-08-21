@@ -4,6 +4,7 @@ module.exports = {
     tagline: `Frontend developer living in Amsterdam`
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-styled-components`,

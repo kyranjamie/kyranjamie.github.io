@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 
@@ -57,6 +58,14 @@ export default class IndexPage extends React.Component<any, {}> {
 
     return (
       <Layout>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <meta
+            name="description"
+            content="Personal website of Frontend Developer, Kyran Burraston, @kyranjamie"
+          />
+          <title>Kyran Jamie Burraston</title>
+        </Helmet>
         <NameCard />
         <IndexContainer>
           <p>Thanks for stopping by.</p>
@@ -68,10 +77,6 @@ export default class IndexPage extends React.Component<any, {}> {
             <a href="https://usabilla.com/">Usabilla</a>, <a href="https://www.goldrepublic.com/">GoldRepublic</a>,
             and <a href="https://blockport.io/">Blockport</a>.
           </p>
-{/*          <p>
-            If you'd like to get in touch, or simply engage in nonsense business jargon,
-            reach out so we can touch base offline.
-          </p>*/}
         </IndexContainer>
       </Layout>
     )
