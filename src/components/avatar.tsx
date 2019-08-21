@@ -8,7 +8,7 @@ const RoundedImg = styled.img`
 
 export default ({ width = '60px' }) => (
   <RoundedImg
-    src="/me.jpg"
+    src="static/me.jpg"
     alt="Portrait of @kyranjamie"
     width={width}
     height={width}
