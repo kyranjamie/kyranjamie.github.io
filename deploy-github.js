@@ -5,7 +5,7 @@ ghpages.publish(
   'public',
   {
     branch: 'master',
-    repo: 'https://github.com/kyranjamie/kyranjamie.github.io.git',
+    repo: 'git@github.com:kyranjamie/kyranjamie.github.io.git',
   },
   error => {
     console.log(error)

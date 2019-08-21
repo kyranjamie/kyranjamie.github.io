@@ -11,7 +11,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy:github": "gatsby build && gh-pages -d public -b master"
+    "deploy:github": "gatsby build && node ./deploy-github.js"
   },
   "dependencies": {
     "@types/styled-components": "^4.1.14",
