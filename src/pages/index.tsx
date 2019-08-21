@@ -42,6 +42,10 @@ export const indexPageQuery = graphql`
   }
 `
 
+const IndexContainer = styled.div`
+  margin-top: 16px;
+`
+
 export default class IndexPage extends React.Component<any, {}> {
   render () {
     const { name, tagline, lookingForWork }: any = this.props.data.site.siteMetadata
@@ -54,12 +58,21 @@ export default class IndexPage extends React.Component<any, {}> {
     return (
       <Layout>
         <NameCard />
-        <p>Thanks for stopping by.</p>
-        <p>
-          I’m a frontend developer based in Amsterdam.
-          Over the last few years I’ve worked with product companies such as Usabilla, GoldRepublic,
-          and Blockport, building web applications used by thousands of people.
-        </p>
+        <IndexContainer>
+          <p>Thanks for stopping by.</p>
+          <p>
+            I’m a frontend developer based in Amsterdam.
+          </p>
+          <p>
+            Over the last few years I’ve worked with product companies such as&nbsp;
+            <a href="https://usabilla.com/">Usabilla</a>, <a href="https://www.goldrepublic.com/">GoldRepublic</a>,
+            and <a href="https://blockport.io/">Blockport</a>.
+          </p>
+{/*          <p>
+            If you'd like to get in touch, or simply engage in nonsense business jargon,
+            reach out so we can touch base offline.
+          </p>*/}
+        </IndexContainer>
       </Layout>
     )
   }

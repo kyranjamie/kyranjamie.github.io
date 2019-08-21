@@ -6,15 +6,27 @@ import Navigation from './navigation'
 import SocialLinks from './social-links'
 
 const Container = styled.div`
-  margin: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 24px;
+  max-width: 640px;
+  height: 100%;
+
+  @media (min-width: 1280px) {
+    max-width: 960px;
+    margin: 0 auto;
+  }
 `
 
-const Main = styled.main``
+const Main = styled.main`
+  flex: 1 0 auto;
+`
 
 export const Layout = ({ children }: any) => (
   <Container>
     <Header />
     <Navigation/>
     <Main>{children}</Main>
+    <SocialLinks />
   </Container>
 )

@@ -15,6 +15,7 @@ const StyledAvatar = styled(Avatar)`
 `
 
 const Media = styled.div`
+  margin-top: 20px;
   display: flex;
   align-items: flex-start;
 `
