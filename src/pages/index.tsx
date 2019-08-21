@@ -66,8 +66,8 @@ export default class IndexPage extends React.Component<any, {}> {
           </p>
           <p>
             Over the last few years I’ve worked with product companies such as&nbsp;
-            <a href="https://usabilla.com/">Usabilla</a>, <a href="https://www.goldrepublic.com/">GoldRepublic</a>,
-            and <a href="https://blockport.io/">Blockport</a>.
+            <a href="https://usabilla.com/">Usabilla,</a> <a href="https://www.goldrepublic.com/">GoldRepublic,</a>
+            &nbsp; and <a href="https://blockport.io/">Blockport.</a>
           </p>
         </IndexContainer>
       </Layout>
