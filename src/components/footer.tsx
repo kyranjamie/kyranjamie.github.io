@@ -7,7 +7,7 @@ interface SocialItemProps {
 }
 
 const Footer = styled.footer`
-  margin: 32px 0;
+  margin: 32px 0 8px;
 `
 
 const StyledAnchor = styled.a`
