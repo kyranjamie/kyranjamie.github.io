@@ -8,7 +8,5 @@ ghpages.publish(
     branch: 'master',
     repo: 'git@github.com:kyranjamie/kyranjamie.github.io.git',
   },
-  error => {
-    console.log(error)
-  }
+  error => error || console.log(error)
 )
