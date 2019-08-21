@@ -58,14 +58,6 @@ export default class IndexPage extends React.Component<any, {}> {
 
     return (
       <Layout>
-        <Helmet>
-          <meta charSet="utf-8" />
-          <meta
-            name="description"
-            content="Personal website of Frontend Developer, Kyran Burraston, @kyranjamie"
-          />
-          <title>Kyran Jamie Burraston</title>
-        </Helmet>
         <NameCard />
         <IndexContainer>
           <p>Thanks for stopping by.</p>
