@@ -4,6 +4,7 @@ const ghpages = require('gh-pages')
 ghpages.publish(
   'public',
   {
+    dotfiles: true,
     branch: 'master',
     repo: 'git@github.com:kyranjamie/kyranjamie.github.io.git',
   },
