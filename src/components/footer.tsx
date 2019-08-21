@@ -7,7 +7,7 @@ interface SocialItemProps {
 }
 
 const Footer = styled.footer`
-  margin-top: 32px;
+  margin: 32px 0;
 `
 
 const StyledAnchor = styled.a`
@@ -21,10 +21,6 @@ const StyledAnchor = styled.a`
     text-decoration: underline;
   }
 `
-
-// const SocialItem = ({ href, children }: SocialItemProps) => (
-//   <StyledAnchor href={href} target="_blank" className="social-link">{children}</StyledAnchor>
-// )
 
 export default () => (
   <Footer>

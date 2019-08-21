@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import Header from './header'
 import Navigation from './navigation'
-import SocialLinks from './social-links'
+import Footer from './footer'
 
 const Container = styled.div`
   display: flex;
@@ -27,6 +27,6 @@ export const Layout = ({ children }: any) => (
     <Header />
     <Navigation/>
     <Main>{children}</Main>
-    <SocialLinks />
+    <Footer />
   </Container>
 )
