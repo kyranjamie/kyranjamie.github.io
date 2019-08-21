@@ -29,7 +29,8 @@ export default () => (
       </Project>
 
       <Project title="Usabilla" url="https://usabilla.com">
-        Joined Usabilla when I first moved to The Netherlands.
+        Joined Usabilla when I first moved to The Netherlands. Rebuilt the company's product, replacing
+        a legacy PHP backend driven appplication, as a Single Page Application.
       </Project>
 
       <Project title="Appsbroker" url="https://www.appsbroker.com">
