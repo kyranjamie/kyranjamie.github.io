@@ -12,13 +12,10 @@ const ProjectContainer = styled.div`
 
 export default () => (
   <Layout>
-    <Helmet>
-      <title>Projects — Kyran Jamie Burraston</title>
-    </Helmet>
     <ProjectContainer>
       <Project title="Blockport" url="https://blockport.io">
         Joined Blockport in March 2018 as Lead Frontend Developer. Within 6 months, we'd build the
-        initial version of the platform.
+        initial version of the cryptocurrency exchange, allowing users to buy, sell and withdraw and deposit funds.
       </Project>
 
       <Project title="Cryptoscore" url="https://cryptosco.re">

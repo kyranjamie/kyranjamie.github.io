@@ -4,25 +4,9 @@
 
 @font-face {
   font-family: 'Space Grotesk';
-  src: url(/assets/SpaceGrotesk-Light.woff2) format('woff2'),
-    url(/assets/SpaceGrotesk-Light.woff) format('woff');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Space Grotesk';
   src: url('/assets/SpaceGrotesk-Bold.woff2') format('woff2'),
     url('/assets/SpaceGrotesk-Bold.woff') format('woff');
   font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Space Grotesk';
-  src: url('/assets/SpaceGrotesk-Medium.woff2') format('woff2'),
-    url('/assets/SpaceGrotesk-Medium.woff') format('woff');
-  font-weight: 500;
   font-style: normal;
 }
 
@@ -36,52 +20,11 @@
 
 @font-face {
   font-family: 'Space Grotesk';
-  src: url('/assets/SpaceGrotesk-SemiBold.woff2') format('woff2'),
-    url('/assets/SpaceGrotesk-SemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Space Grotesk';
-  src: url('/assets/SpaceGrotesk-Light.woff2') format('woff2'),
-    url('/assets/SpaceGrotesk-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Space Grotesk';
   src: url('/assets/SpaceGrotesk-Regular.woff2') format('woff2'),
     url('/assets/SpaceGrotesk-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
-
-@font-face {
-  font-family: 'Space Grotesk';
-  src: url('/assets/SpaceGrotesk-Medium.woff2') format('woff2'),
-    url('/assets/SpaceGrotesk-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Space Grotesk';
-  src: url('/assets/SpaceGrotesk-Bold.woff2') format('woff2'),
-    url('/assets/SpaceGrotesk-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Space Grotesk';
-  src: url('/assets/SpaceGrotesk-SemiBold.woff2') format('woff2'),
-    url('/assets/SpaceGrotesk-SemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-}
-
 
 html {
   box-sizing: border-box;
@@ -135,14 +78,22 @@ a:focus {
   text-decoration: none;
 }
 
+a:focus:hover {
+  text-decoration: underline;
+}
+
 a:active,
-a:focus {
+a:focus,
+a:hover,
+.pseudo-focus {
   outline: 0;
   color: #fff !important;
 }
 
+a:hover::before,
 a:active::before,
-a:focus::before {
+a:focus::before,
+.pseudo-focus::before {
   content: '';
   position: absolute;
   z-index: -1;

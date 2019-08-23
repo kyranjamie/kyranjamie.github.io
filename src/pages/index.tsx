@@ -45,6 +45,7 @@ export const indexPageQuery = graphql`
 
 const IndexContainer = styled.div`
   margin-top: 16px;
+  max-width: 680px
 `
 
 export default class IndexPage extends React.Component<any, {}> {
@@ -67,7 +68,11 @@ export default class IndexPage extends React.Component<any, {}> {
           <p>
             Over the last few years I’ve worked with product companies such as&nbsp;
             <a href="https://usabilla.com/">Usabilla,</a> <a href="https://www.goldrepublic.com/">GoldRepublic,</a>
-            &nbsp; and <a href="https://blockport.io/">Blockport.</a>
+            &nbsp;and <a href="https://blockport.io/">Blockport.</a>
+          </p>
+          <p>
+            I enjoy solving the problems that come with building large web applications. Particular interests
+            include data visualisation, web accessibility and performance optimisation.
           </p>
         </IndexContainer>
       </Layout>

@@ -26,7 +26,7 @@ export default () => (
   <Footer>
     <StyledAnchor target="_blank" href="https://github.com/kyranjamie">Github</StyledAnchor>
     <StyledAnchor target="_blank" href="https://stackoverflow.com/users/1141891/kyranjamie">StackOverflow</StyledAnchor>
-    <StyledAnchor target="_blank" href="https://www.linkedin.com/in/kyranburraston">LinkedIn</StyledAnchor>
+    <StyledAnchor target="_blank" href="https://www.linkedin.com/in/kyranjamie/">LinkedIn</StyledAnchor>
     <StyledAnchor target="_blank" href="https://angel.co/kyranjamie">AngelList</StyledAnchor>
     <StyledAnchor target="_blank" href="https://keybase.io/kyranjamie">Keybase</StyledAnchor>
     <StyledAnchor target="_blank" href="https://www.instagram.com/kyranjamie/">Instagram</StyledAnchor>

@@ -12,12 +12,33 @@ const updateFocusColor = () => {
   initialIndex = initialIndex === colors.length - 1 ? 0 : initialIndex + 1
 }
 
-
 export const onInitialClientRender = () => setTimeout(() =>
-  getAllAnchors().forEach(el => el.addEventListener('blur', e => updateFocusColor())), 1200
+  getAllAnchors().forEach(el => {
+    ['blur', 'mouseout'].forEach(eType => el.addEventListener(eType, e => updateFocusColor()))
+  }),
+  1000
 )
 
-export const onRouteUpdate = ({ location, prevLocation }) =>
-  getAllAnchors().forEach(el =>
-    el.addEventListener('blur', e => updateFocusColor())
-  )
+export const onRouteUpdate = ({ location, prevLocation }) => {
+  const anchors = getAllAnchors()
+  anchors.forEach(el => {
+    ['blur', 'mouseout'].forEach(eType => el.addEventListener(eType, e => updateFocusColor()))
+  })
+  // flashAllColors(anchors)
+}
+
+// const delay = (time) => new Promise((resolve) => setTimeout(() => resolve(), time))
+// async function flashAllColors (elCollection) {
+//   let prevEl;
+//   if (elCollection.length === 0) return
+//   for (const el of elCollection) {
+//     el.classList.add('pseudo-focus')
+//     if (prevEl) prevEl.classList.remove('pseudo-focus')
+//     prevEl = el
+//     updateFocusColor()
+//     await delay(20)
+//   }
+//   prevEl.classList.remove('pseudo-focus')
+// }
+
+// setTimeout(() => flashAllColors(getAllAnchors()), 2000)
