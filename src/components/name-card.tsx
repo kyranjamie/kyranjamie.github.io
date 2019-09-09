@@ -35,7 +35,6 @@ export const NameCard = () => (
     </MediaImage>
     <MediaBody>
       <Name>Kyran Jamie Burraston</Name>
-      <AvailableForWork />
     </MediaBody>
   </Media>
 )
