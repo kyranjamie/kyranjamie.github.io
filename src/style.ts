@@ -16,6 +16,6 @@ const spaceUnits: { [key in UnitSize]: string } = {
 
 // type SpaceUnit = keyof typeof SpaceUnits
 
-export function space (unit: ) {
+// export function space (unit: ) {
 
-}
+// }
