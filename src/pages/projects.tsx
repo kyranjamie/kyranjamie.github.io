@@ -14,7 +14,7 @@ export default () => (
   <Layout>
     <ProjectContainer>
       <Project title="Blockport" url="https://blockport.io">
-        Joined Blockport in March 2018 as Lead Frontend Developer. Within 6 months, we'd build the
+        Joined Blockport in March 2018 as Lead Frontend Developer. Within 6 months, we'd built the
         initial version of the cryptocurrency exchange, allowing users to buy, sell and withdraw and deposit funds.
       </Project>
 
