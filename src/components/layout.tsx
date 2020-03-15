@@ -32,7 +32,7 @@ export const Layout = ({ children }: any) => (
         content="Personal website of Frontend Developer, Kyran Burraston, @kyranjamie"
       />
       <link rel="icon" type="image/png" href="/favicon.png" />
-      <title>Kyran Jamie Burraston</title>
+      <title>@kyranjamie</title>
     </Helmet>
 
     <Container>
