@@ -3,9 +3,8 @@ import { graphql } from 'gatsby'
 
 import { Layout } from '../components/layout'
 
-export default function Template ({
-  data // this prop will be injected by the GraphQL query below.
-}: { data: any}) {
+// this prop will be injected by the GraphQL query below.
+export default function Template({ data }: { data: any }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (

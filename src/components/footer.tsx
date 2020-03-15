@@ -7,15 +7,15 @@ interface SocialItemProps {
 }
 
 const Footer = styled.footer`
-  margin: 32px 0 8px;
+  margin: 32px 0 20px;
 `
 
 const StyledAnchor = styled.a`
   display: inline-block;
   font-size: 14px;
   text-decoration: none;
-  float: left;
-  clear: left;
+  margin-right: 12px;
+  padding: 4px 0;
 
   &:hover {
     text-decoration: underline;
