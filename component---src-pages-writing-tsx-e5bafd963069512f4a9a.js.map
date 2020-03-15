@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/writing.tsx"],"names":[],"mappings":"2FAAA,4CAIe,4BACb,kBAAC,IAAD,KACE","file":"component---src-pages-writing-tsx-e5bafd963069512f4a9a.js","sourcesContent":["import React from 'react'\n\nimport { Layout } from '../components/layout'\n\nexport default () => (\n  <Layout>\n    <div>writings</div>\n  </Layout>\n)\n"],"sourceRoot":""}

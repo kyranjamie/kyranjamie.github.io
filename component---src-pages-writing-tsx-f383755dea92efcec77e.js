@@ -1,2 +1,2 @@
 (window.webpackJsonp=window.webpackJsonp||[]).push([[5],{DoAk:function(n,e,t){"use strict";t.r(e);var a=t("q1tI"),i=t.n(a),r=t("9Dj+");e.default=function(){return i.a.createElement(r.a,null,i.a.createElement("div",null,"writings"))}}}]);
-//# sourceMappingURL=component---src-pages-writing-tsx-e5bafd963069512f4a9a.js.map
+//# sourceMappingURL=component---src-pages-writing-tsx-f383755dea92efcec77e.js.map
